@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <link rel="stylesheet" href="D:\Pend\Web Dev\FREE\style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+
+  <style> body { background-image: linear-gradient(45deg, #06080b, #180f0d, #060809, black); }
+        .NAVBAR a { transition: 0.5s; color: #a5a58d } ;
+        .NAVBAR a:hover { color: #945600; filter: grayscale(75%); transition: 0.5s; }
+  </style>
+
+  <title>SEBASTIAN PATRICIO</title>
+
+</head>
+
+<body>
+  <div class="loader-wrapper">
+    <div class="loader">
+      <div class="lds-ellipsis">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    var loader = document.querySelector(".loader-wrapper")
+    window.addEventListener("load", vanish);
+
+    function vanish() {
+      loader.classList.add("disppear")
+    }
+  </script>
+
+  <div class="NAVBAR">
+    <div class="homebutton">
+      <a href="D:\Pend\Web Dev\FREE\index.html">HOME</a>
+    </div>
+    <a href="D:\Pend\Web Dev\FREE\ABOUT.html">ABOUT</a>
+    <a href="D:\Pend\Web Dev\FREE\PORTFOLIO.html">PORTFOLIO</a>
+    <a href="D:\Pend\Web Dev\FREE\CONTACT.html">CONTACT</a>
+  </div>
+  <br><br>
+  <div class="row">
+    <div class="side">
+      <div class="PHOTOCONTAINER">
+        <div class="overlay">
+          <div class="text">BRANDING</div>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="MAINPHOTO">
+        <div class="overlay">
+          <div class="text">WEB DESIGN</div>
+        </div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="RIGHTPHOTO">
+        <div class="overlay">
+          <div class="text">VISUAL DESIGN</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="FOOTER">
+    <a href="D:\Pend\Web Dev\FREE\index.html">@2018 Sebastian Patricio S</a>
+  </div>
+
+</body>
+
+</html>
