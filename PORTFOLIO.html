@@ -1,634 +1,242 @@
-html {
-  scroll-behavior: smooth;
-}
-* {
-  box-sizing: border-box;
-}
-body{
-  font-family: 'Julius Sans One', sans-serif;
-  background-color: #e9edc9;
-  ackground-image: linear-gradient(white);
-}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 
-hr{
-  color: transparent;
+<head>
+  <link rel="stylesheet" href="D:\Pend\Portfolio\style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+<style media="screen"></style>
+  <title>SEBASTIAN PATRICIO</title>
 
-}
+</head>
 
-h3{
-  font-weight: bolder;
-  text-decoration: none;
-  font-size: 15px;
-}
-.divisionline{
-  text-decoration: none;
-  margin: 100px 00px 100px 00px;
-  width: 100%;
-  height: 17px;
-  background-image: url("https://lh3.googleusercontent.com/pw/AL9nZEUfC9PHtH5V49Xt_dIhQDHOQnc_LMZzCzvtDWTgIVND_tOXrJLgNa45od-1N5rQD3OKKSy8NQpyeNQ4Es86AiFMtExqlZV-92cNJWKqD_I-jIOzTgYpjsvOMln5zXBnq8CE-g4nqgQDK0DCXiRTr_Evsg=w1874-h15-no?authuser=0");
-  background-size: contain;
-  opacity: 100%;
-  background-position: center;
-  filter: hue-rotate(500%);
+<body>
+  <hr id="portfolionavbar">
+  <div class="loader-wrapper">
+    <div class="loader">
+      <div class="lds-ellipsis">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    var loader = document.querySelector(".loader-wrapper")
+    window.addEventListener("load", vanish);
 
-}
-.NAVBAR{
-  margin: 15px;
-  font-family: 'Julius Sans One', sans-serif;
-  font-weight: bolder;
-  overflow: hidden;
-  background-color: inherit;
-  justify-content: center;
-  text-decoration: none;
-  display: flex;
-}
-.NAVBAR a {
-  justify-content: center;
-  margin: 20px;
-  position: relative;
-  text-decoration: none;
-  display: block;
-  color: #3f4238;
-  text-align: center;
-  padding: 10px 40px 10px 40px;
-}
-.NAVBAR a:hover {
-  display: block;
-  opacity: 100%;
-  color: #6b705c;
-}
-/* Column container */
-.row {
-  border-color: red;
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-}
-
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
-.landingleft {
-
-  -ms-flex: 33%; /* IE10 */
-  flex: 33%;
-  background-color: inherit;
-  padding: 5px 00px 00px 100px ;
-}
-
-/* Main column */
-.landingmain {
-  -ms-flex: 33%; /* IE10 */
-  flex: 33%;
-  background-color: inherit;
-  padding: 5px 50px 00px 50px ;
-}
-
-.landingright {
-  -ms-flex: 33%; /* IE10 */
-  flex: 33%;
-  background-color: inherit;
-  padding: 5px 100px 00px 00px ;
-}
-
-.landingimageleft {
-  width: 100%;
-  display: block;
-  border-radius: 5px;
-  background-image: url(https://lh3.googleusercontent.com/pw/AL9nZEUfldKLplPEBjRoHR-i3eN5u5UmnMb1tgVym-V5E7jXhvjCwOO84Ig_ZYaCH2SYxcKh78k4laVs7fCyU7Y_UXYfn5lLNruuiwchO20ecYyfQ7XV9GNWEALetLXkcJEOm9TEBS7WjkRfDrQFgOeRd517aQ=w603-h903-no?authuser=0);
-  -webkit-filter: grayscale(80%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(80%);
-  -moz-boxshadow: inset 0 0 5px black;
-  -webkit-box-shadow: inset 0 0 5px black;
-  box-shadow: inset 0 0 5px black;
-}
-
-.landingimagemain {
-  width: 100%;
-  display: block;
-  position: relative;
-  border-radius: 5px;
-  background-image: url(https://lh3.googleusercontent.com/pw/AL9nZEUFtDoigVo0xP8utbOcicUqwXb2HdCo0TRUjr_Us2_mUMu_Jf9PpDDejHQGC5DLoiSkm68-cnJyKeMWlw9g1WKpbjNOxkorGxwD3L7qEtKn9JEjd6R-e1UWnzwS9sXZjy8lPgAjyI_NXYnBvLNf4_MGig=w678-h903-no?authuser=0);
-  -webkit-filter: grayscale(80%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(80%);
-  background-size: contain;
-  -moz-boxshadow: inset 0 0 5px black;
-  -webkit-box-shadow: inset 0 0 5px black;
-  box-shadow: inset 0 0 5px black;
-}
-
-.landingimageright {
-  width: 100%;
-  display: block;
-  position: relative;
-  border-radius: 5px;
-  background-image: url(https://lh3.googleusercontent.com/pw/AL9nZEXXyQpmn1nBuLGqEH_dpT0sqc-Lr3f9HEkQ21MXo3fhYDADT9vjKGMeHguegoSldE3efV0vqtovQG3giEMFsaaAy3aXQvWzBBMAH_gxoNC_P3mCRN_fOgyoUJk4DMKYrbu4BYIHXHxl7LTSlxH65ouloQ=w723-h904-no?authuser=0);
-  -webkit-filter: grayscale(80%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(80%);
-  background-size: contain;
-  -moz-boxshadow: inset 0 0 5px black;
-  -webkit-box-shadow: inset 0 0 5px black;
-  box-shadow: inset 0 0 5px black;
-}
-/* Fake image, just for this example */
-.fakeimg {
-  width: 100%;
-  display: block;
-  background-color: red;
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(75%);
-  border-radius: 5px;
-  -moz-boxshadow: inset 0 0 5px black;
-  -webkit-box-shadow: inset 0 0 5px black;
-  box-shadow: inset 0 0 5px black;
-}
-#fakeimg1{
-  background-color: #aaa;
-  width: 100%;
-  display: block;
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(75%);
-  border-radius: 5px;
-  -moz-boxshadow: inset 0 0 5px black;
-  -webkit-box-shadow: inset 0 0 5px black;
-  box-shadow: inset 0 0 5px black;
-}
-/* overlay, just for this example */
-.overlay{
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  border-radius: 1px;
-  transition: 1.9s ease;
-  background-image: radial-gradient( #e9edc9, #f4f4d5, #e9edc9);
-  display: block;
-  padding: 20px;
-  }
-
-  .overlaylanding{
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    border-radius: 1px;
-    transition: 1.9s ease;
-    background-image: radial-gradient(#bdb98a, #50473e, black);
-    display: block;
-
-    text-align: center;
+    function vanish() {
+      loader.classList.add("disppear")
     }
+  </script>
 
-  .landingimageleft:hover .overlaylanding{ opacity: 80%; }
-  .landingimagemain:hover .overlaylanding{ opacity: 80%; }
-  .landingimageright:hover .overlaylanding{ opacity: 80%; }
-.text{
-    text-align: justify;
-    font-weight: bold;
-    color: BLACK;
-    font-size: 17px;
-    position:fixed;
-    top: 50%;
-    left: 40%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-.textlanding{
-    font-weight: bold;
-    color: BLACK;
-    font-size: 17px;
-    position:relative;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-/* Footer */
-.footer {
-  opacity: 50%;
-  font-size: 8px;
-  text-align: center;
-  background-color: inherit;
-}
-#footer {
-  text-decoration: none;
-  color: black;
-  font-size: 8px;
-  padding: 10px;
-  text-align: center;
-  background-color: inherit;
-}
-
-.caseleft{
-  padding: 0px 00px 00px 100px ;
-  -ms-flex: 50%; /* IE10 */
-  flex: 50%;
-}
-
-.caseright{
-  padding: 0px 100px 00px 0px ;
-  -ms-flex: 50%; /* IE10 */
-  flex: 50%;
-}
-.caseA{
-  width: 100%;
-  display: block;
-  border-radius: 1px;
-  background-image: url(https://lh3.googleusercontent.com/pw/AL9nZEXrsXIDRKVoXbMgnWtUjc1pDzAJwmWilmBu5tKRSWMeHUDfnzdpoPWRJ_gqIKz7V0OTY05cpO0ExL819TZZCxEEuq9nju2GWszoclbTApRarnf1BhTxR6kx992K5hwLWvYEfE_xVkZISy2HGSoK2H6k9w=w1242-h903-no?authuser=0);
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(30%);
-  background-size: cover;
-  background-position: center;
-  -moz-boxshadow: inset 0 0 5px black;
-  -webkit-box-shadow: inset 0 0 5px black;
-  box-shadow: inset 0 0 5px black;
-}
-
-.caseB{
-  width: 100%;
-  display: block;
-  border-radius: 1px;
-  background-image: url(https://lh3.googleusercontent.com/pw/AL9nZEXb9vRrB_KtAsCN2AxMRVDPRQWgEhtcE9olihqNGcbZm6ZY-OoLcKRUE_ns0RgFrKiukliNYk7Mybcd72CZQO1GsFYicytb0Di4cRyA4C4PyAH4PlUsmgIjdF2xJHE3dq6OwcLGZjbb6AlCwVf60ayPxg=w603-h903-no?authuser=0);
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(30%);
-  background-size: cover;
-  background-position: top;
-}
-
-.caseC{
-  width: 100%;
-  display: block;
-  border-radius: 1px;
-  background-image: url(https://lh3.googleusercontent.com/pw/AL9nZEW-Ya1Hl_7Yxxa-wIxI-QyCxKvSUbYaZUkZS9VwSi2CFAGfYZene_truXMWBrYYyJCIlYQ3y-zeupOYjLkhXUnK4e7Qb7AyPl6MNN3w3d5RR8MqQwPoD_DskEkkWwwToYkhwxzOsKoXpHfizdFtrgAagw=w1325-h795-no?authuser=0  );
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(30%);
-  background-size: cover;
-  background-position: 50% 75%;
-
-}
-
-.caseD{
-  width: 100%;
-  display: block;
-  border-radius: 1px;
-  background-image: url(https://lh3.googleusercontent.com/pw/AL9nZEWgOMkcNac0yY9eQQgu-_WCbYbP4ZXZVYrW7DnXpkws_u_AUskHcOneOr9dhy0Zd3bc5D4Lzaf2-OggQArKiZOe-jqViOi2C9oNb_8uoj4LqQkZoZUe8wLqSCHmAzyG31dFk7gLDyQFer3uRcb-7bDJEw=w1345-h903-no?authuser=0);
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(30%);
-  background-size: cover;
-  background-position: center;
-
-}
-
-.caseE{
-  width: 100%;
-  display: block;
-  border-radius: 1px;
-  background-image: url(https://lh3.googleusercontent.com/pw/AL9nZEVleonFwgNcXcZux_voIVPG09C-XA-k4sjRxTQ50japHLY0TryMm4etgevz_cpTbUtxiQdjR3qHQwJ39n_Dyte3WzeMcIU2C4RShN6XPSPTmbk00r6GMZeEBwcS9BSzBUgKqlSzuaZ_9Gh-hWqHRJ7rEQ=w1520-h903-no?authuser=0);
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(30%);
-  background-size: 150%;
-  background-position: center;
-
-}
-
-.caseF{
-  width: 100%;
-  display: block;
-  border-radius: 1px;
-  background-image: url(https://lh3.googleusercontent.com/pw/AL9nZEVImXk3e8ithIvW3VfuxWqDl5ofX4-cS5v0b4Tqaakz04kHFtKtBZ0ESs_LVqNOi5U4JDpd1ghpPnlCGyV_L27NMenJAR05aDQXs1ovtkHJfSBlf4vfV9nqphbtKCoT-GwJvCsUnriFIhGSgL1dffrn4Q=w1370-h903-no?authuser=0);
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(30%);
-  background-size: cover;
-  background-position: center;
-
-}
-
-.caseA:hover .overlay{ opacity: 100%; }
-.caseB:hover .overlay{ opacity: 100%; }
-.caseC:hover .overlay{ opacity: 100%; }
-.caseD:hover .overlay{ opacity: 100%; }
-.caseE:hover .overlay{ opacity: 100%; }
-.caseF:hover .overlay{ opacity: 100%; }
-
-.left {
-  padding: 5px 00px 00px 100px ;
-  -ms-flex: 33%; /* IE10 */
-  flex: 33%;
-}
-.main {
-  padding: 5px 50px 00px 50px ;
-
-  -ms-flex: 33%; /* IE10 */
-  flex: 33%;
-}
-.right {
-  padding: 5px 100px 00px 00px ;
-
-  -ms-flex: 33%; /* IE10 */
-  flex: 33%;
-}
-.parallax{
-  padding-left: 50px;
-  padding-right: 50px;
-  /* The image used */
-  background-image: url("");
-  /* Set a specific height */
-
-  /* Set a specific height */
-  min-height: 200px;
-  max-height: 250px;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.caseparallax{
-  padding: 0px 00px 00px 100px ;
-  -ms-flex: 60%; /* IE10 */
-  flex: 60%;
-}
-
-.caseaboutme{
-  padding: 0px 100px 00px 10px ;
-  -ms-flex: 40%; /* IE10 */
-  flex: 40%;
-}
-.secondparallax{
-  position: relative;
-  padding-left: 50px;
-  padding-right: 50px;
-  /* The image used */
-  background-image: url("https://lh3.googleusercontent.com/pw/AL9nZEVk42O1pJeGN0YHukZ8kCnT5a6kIlYICQ7naSVly7quVj-2jsQLgYE_sNE3EysVwGaAEB1-fgCK6pL_Umg3kGsB9fHkZfwjfYxiIRxhg6ILTzehus2tX2eP6BkAGuJWwx4PCuH5I4VZoOlZ4KeGTaeQww=w1354-h903-no?authuser=0");
-/* The FILTERS used */
-  filter: contrast(130%);
-  /* Set a specific width */
-  width: 100%;
-/* Set a specific height */
-  min-height: 800px;
-  /* Create the parallax scrolling effect */
-  background-attachment:  fixed;
-  background-position: 40% 50%;
-  background-repeat:  no-repeat;
-  background-size:  contain;
-}
-
-.contactleft{
-  padding: 0px 00px 00px 300px ;
-  -ms-flex: 50%; /* IE10 */
-  flex: 50%;
-}
-
-.contactright{
-  padding: 80px 100px 00px 100px ;
-  -ms-flex: 50%; /* IE10 */
-  flex: 50%;
-}
+  <div class="NAVBAR">
+    <a href="#aboutme">ABOUT</a>
+    <a  href="#portfoliome">PORTFOLIO</a>
+    <a href="#contactme">CONTACT</a>
+  </div>
 
 
-.contactleft a{
-  padding: 10px;
-  font-family: 'Tiro Devanagari Hindi', serif;
-  margin:100px;
-  text-decoration: 50px;
-}
-
-.idcard a{
-  transition: 0.5s;
-  align-items: baseline;
-  font-weight: lighter;
-  font-family: 'Tiro Devanagari Hindi', serif;
-  margin: 15px;
-  text-decoration: none;
-  color:black;
-}
-
-.idcard a:hover {
-  transition: 0.5s;
-  color: inherit;
-  opacity: 75%;
-}
-
-.socialmedia{
-  padding: 5px;
-  transition: 1s;
-}
-
-.socialmedia a:hover{
-  transition: 1.5s;
-  opacity:50%;
-  text-decoration: line-through ;
-}
-
-.contactright a{
-  font-weight: lighter;
-  font-family: 'Tiro Devanagari Hindi', serif;
-  margin: 15px;
-  text-decoration: none;
-  color:black;
-}
-
-.idcard{
-  text-decoration: none;
-  padding-bottom: 15px;
-
-}
-#downbuttonABOUT{
-  font-family: 'Tiro Devanagari Hindi', serif;
-  text-decoration: none;
-  font-size: 15px;
-  float: right;
-  margin: 00px 00px 00px 00px;
-}
-#upbutton{
-  background-color: inherit;
-  text-decoration: none;
-  font-size: 15px;
-  float: right;
-  margin: 00px 100px 00px 00px;
-}
-
-#downbutton{
-  text-decoration: none;
-  font-size: 15px;
-  float: left;
-  margin: 00px 00px 00px 00px;
-}
-
-#email{
-  color:black;
-  transition: 0.5s;
-  text-align: center;
-  text-decoration: none;
-  }
-
-  input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    color: black;
-    background-color: inherit;
-    border: 2px solid #black;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-  }
+  <div class="row">
+    <div style="text-align:center" class="landingleft">
+      <div class="landingimageleft" style="max-width: 500px;height:550px;">
+        <div class="overlaylanding">
+          <div class="textlanding">
+            Branding
+          </div>
+        </div>
+      </div><br>
+    </div>
+    <div style="text-align:center" class="landingmain">
+      <div class="landingimagemain" style="max-width: 500px;height:550px;">
+        <div class="overlaylanding">
+          <div  class="textlanding">
+            VISUAL DESIGN
+          </div>
+        </div>
+      </div><br>
+    </div>
+    <div  class="landingright">
+      <div class="landingimageright" style="max-width: 500px; height:550px;">
+        <div  class="overlaylanding">
+          <div   class="textlanding">
+            Web Design
+          </div>
+        </div>
+      </div><br>
+    </div>
+  </div>
 
 
 
-  input[type=submit] {
-    width: 100%;
-      transition:1s;
-    background-color: inherit;
-    border: 2px solid #black;
-    color: brown;
-    padding: 12px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-  }
+<div class="divisionline"></div>
 
-  input[type=submit]:hover {
-    color: black;
-    filter: grayscale(75%);
-    transition:0.5s;
-    border-style: solid;
-    border-color: red;
-    background-color: inherit;
-  }
+<hr id="portfoliome" >
 
-  .mainbox {
-    background-color: inherit;
-    color: black;
-    display: -ms-flexbox; /* IE10 */
-    display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
-  }
-  .CONFORM {
-    border-radius: 5px;
-    border-color: black;
-  }
-  /* Begin Right Contact Page */
-  .direct-contact-container {
-    max-width: 700px;
-  }
+    <p style="font-size: 25px;font-family: 'Tiro Devanagari Hindi', serif; font-weight: lighter; margin: 00px 10px 00px 100px;text-align: center;" >
+      <a id="downbutton"  href="#aboutme">DOWN</a>
+         Work
+       <a id="upbutton"  href="#portfolionavbar">UP</a>
+   </p>
+<hr >
+<br>
 
-  /* Location, Phone, Email Section */
-  .contact-list {
-    text-align: left;
-    background-color: inherit;
-    list-style-type: none;
-    margin-left: 0;
-    padding-right: 50px;
-  }
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 1300px) {
-  .landingimageleft{ background-size: cover;}
-  .landingimagemain{ background-size: cover;}
-  .landingimageright{ background-size: cover;}
-}
-@media screen and (max-width: 1000px) {
-  .row {
-    flex-direction: column;
-    justify-content: center;
-    height: 50%;
-  }
-  .landingleft{ padding:10px 100px 10px 100px; }
-  .landingmain{ padding:10px 100px 10px 100px; }
-  .landingright{ padding:10px 100px 10px 100px;}
+  <div class="row">
+    <div class="caseleft" id="caseleft">
+      <div class="caseA" style="height:250px;"><a href="https://www.behance.net/gallery/148207249/Crunky-KID">
+        <div class="overlay">
 
-  .landingimageleft{ background-size: cover;}
-  .landingimagemain{ background-size: cover;}
-  .landingimageright{ background-size: cover;}
+          <div class="text">
+            CRUNKI KID
+              <p>CONCEPT  | Logo Design </p>
+          </div>
 
-  .divisionline{ background-size: contain; height: 10px; }
+        </div>
+      </a></div>
+      <div class="caseC" style="height:250px;"><a href="https://www.behance.net/gallery/145138151/Brito-Tour-Travel-Agency">
+        <div class="overlay">
+          <div class="text">
+            Brito Tour
+              <p>Logo  | Web Design </p>
+          </div>
+        </div>
+      </a></div>
+      <div class="caseE" style="height:250px;"><a href="https://www.behance.net/gallery/141104379/The-Uncle-Plug-Concept">
+        <div class="overlay">
+          <div class="text">
+            The Uncle Plug
+              <p>CONCEPT  | Brand Design </p>
+          </div>
+        </div>
+      </div>
+    </a></div>
+    <div class="caseright">
+      <div class="caseB" style="height:250px;"><a href="https://www.behance.net/gallery/143193513/Cold-Moment-Design">
+        <div class="overlay">
+          <div class="text">
+            Cold Moment
+              <p>Logo  | Web Design </p>
+          </div>
+        </div>
+      </a></div>
+      <div class="caseD" style="height:250px;"><a href="https://www.behance.net/gallery/150775837/CHILES-EN-NOGADA-ADS">
+        <div class="overlay">
+          <div class="text">
+            Chiles en Nogada
+              <p>CONCEPT  | Advertising </p>
+          </div>
+        </div>
+      </a></div>
+      <div class="caseF" style="height:250px;"><a href="https://www.behance.net/gallery/143156717/HERCULIAN-Packaging">
+        <div class="overlay">
+          <div class="text">
+            Herculian
+              <p>Logo  | Brand Design </p>
+          </div>
+        </div>
+      </a></div>
+    </div>
+  </div>
+  <hr>
 
-  .caseright{
-    padding:10px 25px 10px 25px;
-  }
-  .caseleft{
-    padding:10px 25px 10px 25px;
-  }
-}
+<div class="divisionline"></div>
 
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .NAVBAR a {
-    display: flex;
-    flex-direction: column;
-    float: none;
-  }
-}
+<div class="row">
+  <div class="caseparallax">
+    <div class="secondparallax" style=""></div>
+  </div>
+  <div class="caseaboutme">
+    <br>
+    <hr id="aboutme">
+    <br><br><br><br><br>
+      <h1  style="margin-left: 100px"></h1>
+      <h1 id="" style="font-size: 25px;font-family: 'Tiro Devanagari Hindi', serif; font-weight: lighter; margin:00px 50px 00px 50px; ">ABOUT ME <a style="margin-right:-50px;" id="upbutton" href="#portfolionavbar">UP</a></h1>
+      <br><br><br><br>
+      <div class="paragraph" style="text-decoration: none;text-align: justify;margin: 00px 50px 00px 50px; max-width: 400px;">
+        <p>I find great working across multiple disciplines
+          and never stop discovering new skills and evolving
+           my craft, my passion for visuals, graphic design,
+           and cinematography. Combining storytelling with
+           visual design and large part of my work focuses
+           on the relationship between technology, arts and
+           ethics.</p>
+  <br>
+        <p>My story, mixing different techniques such as
+          Illustration, concept design, web design. Trying
+          always to push the limits, explore new techniques
+          and overcome new challenges, combining storytelling
+          with a strong sense of art direction.</p>
+      </div>
+      <br><br><br><br><br><br><br>
+<a id="downbuttonABOUT"  href="#contactme">DOWN</a>
+<hr>
+  </div>
+</div>
+<div class="divisionline"></div>
+<hr id="contactme" >
 
-/* Responsive layout - makes a one column-layout instead of two-column layout */
-@media (max-width: 800px) {
-  .flex-container {
-    display: flex;
-    flex-direction: column;
-  }
-}
-/* Center the loader */
-.loader {
-  position: absolute;
-  text-align: center;
-  color: white;
-}
+    <p style="font-size: 25px;font-family: 'Tiro Devanagari Hindi', serif; font-weight: lighter; margin-left: 125px;text-align: center;" > Contact<a id="upbutton"  href="#portfolionavbar">UP</a></p>
+<hr >
+<br><br><br><br>
+  <div class="CONTACT">
+    <div class="row">
+      <div class="contactleft">
+        <div class="mainbox">
+          <div style=" -ms-flex: 40%; /* IE10 */
+            flex: 40%;;padding:00px 00px 00px 00px;"class="rightside">
+            <div class="CONFORM">
+              <form action="/action_page.php">
+                <label style="color:black;" for="fname">Name</label>
+                <input type="text" id="fname" name="fullname" placeholder="Your name...">
 
-.loader-wrapper{
-position: fixed;
-top: 0;
-left: 0;
-background-image: radial-gradient( #796035, black);
-height: 100%;
-width: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
-transition: : vanish 1s forwards;
-}
+                <label style="color:black;" for="lname">Subject</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your inquiry...">
 
-.disppear{
-animation: vanish 3s forwards;
-}
 
-.lds-ellipsis {
-  display: inline-block;
-  position: relative;
-  width: 80px;
-  height: 80px;
-}
-.lds-ellipsis div {
-  position: absolute;
-  top: 33px;
-  width: 13px;
-  height: 13px;
-  border-radius: 50%;
-  background: grey;
-  animation-timing-function: cubic-bezier(0, 1, 1, 0);
-}
-.lds-ellipsis div:nth-child(1) { left: 8px; animation: lds-ellipsis1 1s infinite; }
-.lds-ellipsis div:nth-child(2) { left: 8px; animation: lds-ellipsis2 1s infinite; }
-.lds-ellipsis div:nth-child(3) { left: 32px; animation: lds-ellipsis2 1s infinite; }
-.lds-ellipsis div:nth-child(4) { left: 56px; animation: lds-ellipsis3 1s infinite; }
-@keyframes lds-ellipsis1 {
-  0% { transform: scale(0); }
-  100% { transform: scale(1); }
-}
-@keyframes lds-ellipsis3 {
-  0% { transform: scale(1); }
-  100% { transform: scale(0); }
-}
-@keyframes lds-ellipsis2 {
-  0% { transform: translate(0, 0); }
-  100% { transform: translate(24px, 0);}
-}
-@keyframes vanish {
-  100%{ opacity: 0; visibility: hidden;}
-}
+
+                <label style="color:black;" for="subject">Content</label>
+                <textarea id="subject" name="subject" placeholder="Write something..." style="height:100px"></textarea>
+
+                <input type="submit" value="Submit">
+              </form>
+            </div>
+          </div>
+            </div>
+
+      </div>
+      <div class="contactright">
+        <div class="idcard">
+          <br><br><br><br><br>
+          <h3><a href="#">Warszawa, Polska</a></h3>
+          <h3><a href="#">+48 660 868 844</a></h3>
+          <h3><a href="mailto:sebastianpatricio96363@gmail.com" >sebastianpatricio96363@gmail.com</a></h3>
+        </div>
+
+        <hr>
+        <div class="socialmedia">
+          <a style="padding:5;min-width:20px;" id="Behance" href="https://www.behance.net/sebastipatrici1">
+            <mg src="" alt="Behance">BEHANCE
+          </a>
+          <a style="margin-right: 5px;padding:5;min-width:90px;" id="LinkeIn" href="https://www.linkedin.com/in/patriciosebastianps/">
+            <mg src="" alt="LinkeIn">LinkedIn
+          </a>
+          <a style="padding:5;min-width:90px;" id="CV" download href="D:\Pend\ill\assets\CV_Sebastián_Patricio_Sánchez_.pdf">
+            <mg src="" alt="CV">CV
+          </a>
+          <a style="padding:5;min-width:90px;" id="Twitter" href="Twitter">
+            <mg src="" alt="Twitter">Twitter
+          </a>
+        </div>
+        <hr>
+      </div>
+    </div>
+  </div>
+
+
+<br><br><br><br><br><br>
+<div class="footer">
+  <h2><a id="footer"href="#">@SebastianPS2022</a> </h2>
+</div>
+ </body>
